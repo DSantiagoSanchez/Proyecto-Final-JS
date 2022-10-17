@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CODERPRESTAMOS</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <section>
+      <div>
+        <h1>CODERPRESTAMOS</h1>
+        <div>
+          
+        </div>
+      </div>
+    </section>
+    <div id="table-container">
+      <label id="textoPresentacion">Hola estimado usuario!!! Estamos para ofrecerle los mejores prestamos a plazo fijo y con menor interes del mercado!</label>
+      <table>
+        <thead>
+          <tr>
+            <th>PRESTAMOS HASTA</th><th>SUELDO MINIMO</th><th>3 CUOTAS</th><th>6 CUOTAS</th><th>12 CUOTAS</th>
+          </tr>
+        </thead>
+        
+        <tr>
+          <td>$125.000</td><td>$60.000</td><td>15% interes</td><td>30% interes</td><td>45% interes</td>
+        </tr>
+        <tr>
+          <td>$250.000</td><td>$100.000</td><td>15% interes</td><td>30% interes</td><td>45% interes</td>
+        </tr>
+        <tr>
+          <td>$500.000</td><td>$175.000</td><td>15% interes</td><td>30% interes</td><td>45% interes</td>
+        </tr>
+        <tr>
+          <td>$800.000</td><td>$300.000</td><td>15% interes</td><td>30% interes</td><td>45% interes</td>
+        </tr>
+      </table>
+    </div>
+  </header>
+
+  <div class="container">
+    <form class="form" id="formulario">
+      <p class="form-title">Datos personales</p>
+      <div class="form-input nombre">
+        <input id="nombre" type="text">
+        <label for="nombre">Nombre y apellido/s</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input edad">
+        <input id="edad" type="text">
+        <label for="edad">Edad</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input dni">
+        <input id="dni" type="text">
+        <label for="dni">DNI (solo numeros)</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input numTelefono">
+        <input id="numTelefono" type="text">
+        <label for="numTelefono">Numero celular</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input sueldo">
+        <input id="sueldo" type="text">
+        <label for="sueldo">Sueldo (solo numeros)</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input cantPrestamo">
+        <input id="cantPrestamo" type="text">
+        <label for="cantPrestamo">Prestamo solicitado (solo numeros)</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input cantidadCuotas">
+        <input id="cantidadCuotas" type="text">
+        <label for="cantidadCuotas">Cuotas de 3,6 o 12</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-input cbu">
+        <input id="cbu" type="text">
+        <label for="cbu">cbu/cvu</label>
+        <p class="mensajeError"></p>
+      </div>
+      <div class="form-boton">
+        <button type="submit">Confirmar</button>
+      </div>
+    </form>
+  </div>
+  
+  
+  
+  <label id="respuesta"></label><br>
+  <br>
+  <label id="respuestaMontoTotal"></label><br>
+  <label id="respuestaMontoMensual"></label>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="index.js"></script>
+</body>
+</html>

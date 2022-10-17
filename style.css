@@ -1,0 +1,130 @@
+/*Codigo universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:beige;
+    background-size: 100vw 100vh;
+}
+
+header{
+    background-color: black;
+    height: 300px;
+    
+}
+
+/*Title*/
+h1{
+    font-family:fantasy;
+    padding: 20px;
+    padding-top: 20px;
+    color:rgb(245, 245, 204);
+    max-width: 40%;
+    
+}
+#textoPresentacion{
+    font-family:fantasy;
+    color: #ddd;
+    margin: center;
+    width: 800px;
+}
+
+/*Tabla info*/
+#table-container{
+    width: 775px;
+    margin:auto
+}
+
+table{
+    background-color: rgb(223, 223, 187);
+    width: 100%;
+}
+
+th, td{
+    padding: 4px;
+}
+
+thead{
+    background-color: rgb(255, 255, 174);
+    border-bottom: solid 5px #000000;
+    color: black;
+}
+
+tr:nth-child(even){
+    background-color: rgb(238, 245, 212);
+}
+
+/*Formulario*/
+.container{
+    
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px
+}
+
+
+.form{
+    
+    max-width: 500px;
+    padding: 30px 50px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgba(143, 224, 224, 0.514);
+}
+
+.form-title{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.form-input{
+    margin-bottom: 30px;
+}
+
+.form-input label{
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #363636;
+}
+
+.form-input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid black;
+}
+
+.form-input input:focus + label{
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-boton button{
+    background: black;
+    color: #ddd;
+    padding: 10px 50px;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.form-boton button:hover{
+    background: #383636;
+    transition: 0.5s;
+}
+
+.mensajeError{
+    color: rgba(167, 0, 0, 0.829);
+    margin-top: 0px;
+    font-size: 12px;
+}
